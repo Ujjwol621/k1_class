@@ -1,0 +1,70 @@
+/* selectors in css
+1. Universal selector (*)
+2. ID selector (#)
+3. Class selector (.)
+4. tag selector 
+
+
+5. Group selector
+6. Child selector
+7. pseudo selector */
+
+/* universal selector  */
+/* *{
+        border: 2px solid black;
+} */
+
+/* id selector */
+/* #page2{
+    border: 2px solid black;
+    background-color: lightblue;
+} */
+
+/* class selector */
+/* .page3{
+    border: 2px solid black;
+    background-color: lightgreen;
+} */
+
+/* tag selector */
+/* p{
+    border: 2px solid black;
+    background-color: lightyellow;
+} */
+
+/* group selector */
+/* span,h1{
+    border: 2px solid black;
+    background-color: lightpink;
+} */
+
+/* child selector */
+/* div h3{
+    border: 2px solid black;
+    background-color: rgb(96, 89, 90);
+} */
+
+/*pseudo tag*/
+/* div h3:hover{
+    background-color: rgb(119, 23, 37);
+} */
+
+/* Properties and Values in CSS*/
+
+.first {
+  /* border:10px solid black; */
+  /* border-width: 20px;
+  border-style: dashed;
+  border-color: blue;*/
+
+  /* border:10px solid black;*/
+  height:500px;
+  width: 500px;
+  border-radius:50px;
+  color:rgb(38, 58, 215);
+  background-color:rgb(192, 151, 89);
+  background-image: url("https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?semt=ais_rp_progressive&w=740&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

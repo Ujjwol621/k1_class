@@ -1,0 +1,37 @@
+.box{
+    border: 2px solid black;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+
+    background-image: url("https://www.iamfy.co/cdn/shop/files/m_2Fx1000_2F71233a11-edc3-442d-96a2-e5a58ac93561.jpg?v=1760444343");
+    background-color: black;
+
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: repeat; */
+    
+
+    /* background-position: top left;
+    background-position: top center;
+    background-position: top right; 
+
+    background-position: center left;
+    background-position: center center;
+    background-position: center right;
+
+    background-position: bottom left;
+    background-position: bottom center;
+    background-position: bottom right; */
+
+    /* background-position: 10px 100px; 10px from left(x-axis) and 100px from top(Y-axis) */
+
+    background-position: center;
+    background-size: auto;
+    background-size: contain;
+    background-size: cover;
+
+}

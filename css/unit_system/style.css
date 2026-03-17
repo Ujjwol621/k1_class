@@ -1,0 +1,31 @@
+html{
+    font: 100px;
+}
+
+
+
+.parent{
+    border: 2px solid rgb(216, 17, 17);
+    width: 1000px;
+    font-size : 20px;
+    /* font-size : 10rem; it takes 10 times of the font size of the root element; 1000px */
+}
+
+.first{
+    border: 2px solid black;
+    width: 75%; /* it takes 75% of the parent width; 750px */
+    /* width: 750px; it takes 750px of the parent width; 75%
+    width: 50vw; it takes 50% of the viewport width; 500px
+    height :50vh; it takes 50% of the viewport height; 500px */
+    height: 100px;
+    font-size: 2em; /* it takes 2 times of the font size of the parent; 200px */
+    font-size : 5rem; /* it takes 2 times of the font size of the root element; 200px */
+}
+
+
+/* unit system in css; */
+/* Absolute or fixed unit : px, cm, mm, in, pt, pc
+Relative unit : em, ex, ch, rem, vw, vh, vmin, vmax, % */
+
+/* 96 px = 1in
+1cm = 37.8px */

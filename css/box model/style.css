@@ -1,0 +1,39 @@
+.box {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  
+  box-sizing: border-box;
+  /* box-sizing: content-box;
+  box-sizing: padding-box; */
+  
+  /* padding: 50px; */
+  /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px; */
+
+  /* margin:50px; */
+
+  /* margin: 50px; */
+  /* margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px; */
+
+  /* margin: auto; margin-top: 50px; */
+
+  /* margin-bottom: 200px; */
+  /* margin collapse it means the margin of the parent and child will collapse into one margin, and the larger one will be applied. */
+}
+
+.box1 {
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+
+  margin-top: 100px;
+  /* margin collapse it means the margin of the parent and child will collapse into one margin, and the larger one will be applied. */
+}
+

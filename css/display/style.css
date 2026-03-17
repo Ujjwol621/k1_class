@@ -1,0 +1,26 @@
+.box{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    display:block;
+    display:inline;
+    display:inline-block;
+    /* display:flex; */
+    /* display:inline-flex;
+    display:ruby-base; */
+    margin:auto
+}
+
+.box1{
+    /* display:none; */
+    /* visibility: hidden; */
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    overflow: auto;
+    /* overflow: scroll; */
+    /* overflow-x:;
+    overflow-y:;
+*/
+margin:auto;
+}
