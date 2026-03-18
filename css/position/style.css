@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .position {
   border: 2px solid black;
   font-size: 20px;
@@ -53,3 +58,27 @@ a {
 body {
   background-color: #382288;
 }
+
+.p3{
+  position:relative;
+  left: 500px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ddd;
+  
+  position: relative; 
+}
+
+.badge {
+  background: red;
+  color: white;
+  padding: 5px;
+
+  position: absolute; /* <--- THIS IS THE FLYER */
+  top: 100px;          /* 10px from the TOP of the card */
+  right: 10px;        /* 10px from the RIGHT of the card */
+}
+
