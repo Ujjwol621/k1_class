@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  border: 2px solid black;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  justify-content: space-around;
+  align-content: center;
+  padding: 30px;
+  gap: 500px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 65px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  gap: 100px;
+}
+
+nav{
+    display:flex;
+    gap: 50px;
+}
+
+.contact a{
+    background-color: rgb(36, 204, 204);
+    padding:10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color:white;
+    align-content: baseline;
+}

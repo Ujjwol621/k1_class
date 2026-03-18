@@ -1,0 +1,71 @@
+.parent {
+  border: 2px solid black;
+  height: 900px;
+  display: flex;
+
+  /* flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+
+  /* justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly; */
+
+  /* align-items:baseline;
+  align-items: center;
+  align-items: end; */
+
+  /* justify-content: center;
+    align-items: baseline; */
+
+  /* justify-content: end;
+    align-items: baseline; */
+
+  /* justify-content: baseline;
+    align-items: center; */
+
+  /* justify-content: center;
+    align-items: center; */
+
+  /* justify-content: end;
+    align-items: center; */
+
+  /* justify-content: baseline;
+    align-items: end;
+
+    justify-content: center;
+    align-items: end;
+
+    justify-content: end;
+    align-items: end; */
+
+  /* flex-wrap:nowrap;
+    flex-wrap:wrap;
+
+    align-content: baseline;
+    align-content: center;
+    align-content: end; */
+
+  flex-wrap: wrap;
+  align-content: baseline;
+
+  /* align-content: space-around;
+  align-content: space-between;
+  align-content: space-evenly; */
+
+  row-gap: 20px;
+  column-gap: 20px;
+
+  gap: 30px;
+
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+}
