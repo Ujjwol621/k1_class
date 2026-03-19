@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    gap: 500px;
+    flex-wrap:wrap;
+}
+
+.nav-bar{
+    display: flex;
+        gap: 20px;
+
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration:none;
+    color: white;
+}
+
+.contact{
+    display: flex;
+    /* padding-right: 50px; */
+    background-color: turquoise;
+    border-radius: 30px;
+    padding:3px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
