@@ -1,0 +1,42 @@
+.parent {
+  border: 5px solid black;
+  height: 900px;
+  /* box-sizing: border-box; */
+  display: grid;
+  /* grid-template-columns: 200px 200px 200px 200px 200px 200px; */
+  /* grid-template-columns: 10% 10% 10% 10% 10%; */
+  /* grid-template-columns: 20vw 20vw; */
+  /* grid-template-columns: 1fr 3fr 1fr 1fr; */
+  /* grid-template-columns: auto auto auto auto; */
+  /* grid-template-columns: repeat(6, 1fr); */
+  /* grid-template-columns: repeat(2, 500px); */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px 100px 100px;
+
+  /* yesle 3 rows ma naateko haru lai 300px ko height dincha */
+  grid-auto-rows: 100px;
+  /* yesle 3 columns ma naateko haru lai 300px ko height dincha */
+  grid-auto-columns: 300px;
+
+  /* justify-content: baseline;
+  justify-content: center;
+  justify-content: end; */
+
+  /* align-content: baseline; */
+  /* align-content: center;
+  align-content: end; */
+  /* gap: 10px; */
+}
+
+.box {
+  border: 2px solid red;
+}
+
+.b1{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 4; */
+}
+

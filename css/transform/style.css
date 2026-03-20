@@ -1,0 +1,36 @@
+.transform{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+/*transform*/
+    /* 2d */
+    /* 3d */
+
+    /* transform:skew();
+    transform:rotate();
+    transform:translate(); */
+    /* /* transform:scale(); * */
+    margin: auto;
+
+}
+
+.transform:hover{
+    /* transform: translateX(200px);
+    transform: translateY(200px); */
+    /* transform:translate(200px, 200px); */
+    /* transform: perspective(1000px) translateZ(-100px)}; */
+
+    /* transform: rotateX(45deg); */
+    /* transform: rotatey(45deg); */
+    /* transform: rotateZ(45deg); */
+
+    /* transform: skewX(45deg);
+    transform: skewY(45deg); */
+
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+
+    /* transform: perspective(50px) rotateX(45deg) scaleZ(5); */
+
+    
+}

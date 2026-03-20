@@ -1,0 +1,29 @@
+.parent{
+    border: 3px solid red;
+    height: 400px;
+}
+
+.trasistion{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    transition-property: all;
+    transition-duration: 3s;
+
+    /* transition-delay: 1s; */
+    /* transition-timing-function: linear; */
+
+    transition-timing-function: ease;
+    /* slow fast slow (1s 3s 1s) */
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
+
+
+}
+.trasistion:hover{
+    border: 2px solid black;
+    transform: translateX(900px)
+    /* transition: all 1s ease-in-out; */
+}
