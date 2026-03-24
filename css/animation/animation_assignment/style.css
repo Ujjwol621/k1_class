@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.road-bg {
+  border: 10px solid rgb(245, 213, 30);
+  width: 100%;
+  height: 600px;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/040/171/231/small/ai-generated-empty-asphalt-road-highway-background-generative-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  perspective: 3000px;
+}
+
+.car {
+  /* border: 5px solid rgb(188, 59, 59); */
+  width: 750px;
+  height: 600px;
+  /* Crucial Change: Create the relative stacking context */
+  position: relative;
+  animation: driveIntoDistance 5s ease-out infinite;
+
+  /* Smooths out the transformation */
+  transform-origin: bottom center;
+}
+
+/* New element for the car body. It will sit on top (z-index: 2). */
+.car-body {
+  /* border: 2px solid rgb(243, 236, 236); */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cms.eichertrucksandbuses.com/uploads/ib/exterior/qatar-20.15-ex-2.png");
+  background-size: cover;
+  background-position: center;
+
+  position: absolute; /* Needed for z-index */
+  z-index: 2; /* SITS ON TOP OF WHEELS */
+}
+
+/* Base styles for all wheels. They sit behind the car body (z-index: 1). */
+.wheel {
+    /* border: 2px solid rgb(242, 199, 199); */
+  width: 100px;
+  height: 120px;
+  background-image: url("https://www.ice-tyres.com/images/n/ice_tires_ms15-304.png");
+  background-size: cover;
+  background-position: center;
+
+  /* Crucial Changes for Stacking */
+  position: absolute;
+  margin-bottom: 30px; /* Sits lower than the car body */
+  z-index: 1; /* SITS BEHIND THE CAR-BODY */
+
+  /* animation-name: rotate;
+    animation-duration: 0.5ms;
+    animation-iteration-count: infinite;     */
+  animation: spin 10ms linear infinite;
+}
+
+.left-wheel {
+  left: 25%;
+  bottom: 5%;
+}
+
+.right-wheel {
+  right: 25%;
+  bottom: 5%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes driveIntoDistance {
+  0% {
+    transform: translateY(0) scale(1) rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    /* Move it up 320px, shrink it to 0% size, and tilt it slightly */
+    transform: translateY(-320px) scale(0) rotateX(25deg);
+    opacity: 0.8; /* Slight fade as it hits the horizon */
+  }
+}

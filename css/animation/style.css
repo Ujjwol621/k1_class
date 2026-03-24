@@ -1,0 +1,39 @@
+.parent{
+    border: 2px solid black;
+    height: 500px;
+}
+.animation{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+
+    animation-name: first;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+    animation-delay: 2s;
+    /* animation-direction:reverse;
+    animation-direction: alternate;
+    animation-direction:alternate-reverse; */
+
+    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
+
+
+}
+
+@keyframes first{
+    0%{
+        background-color: red;
+        transform: translateX(100px);
+    }
+    /* 50%{
+        background-color: blue;
+        transform: translateX(200px);
+    } */
+    100%{
+        background-color: green;
+        transform: translateX(900px);
+    }
+}

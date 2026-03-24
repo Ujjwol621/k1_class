@@ -30,8 +30,8 @@
     /* background-position: 10px 100px; 10px from left(x-axis) and 100px from top(Y-axis) */
 
     background-position: center;
-    background-size: auto;
-    background-size: contain;
+    /* background-size: auto; */
+    /* background-size: contain; */
     background-size: cover;
 
 }

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    border: 10px solid rgb(243, 38, 38);
+    height: 93vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-image: url("https://t3.ftcdn.net/jpg/01/70/73/58/360_F_170735855_s5Olj0fqToJSU2EOBvciXOfs9oPu8iNr.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.car{
+    /* border: 3px solid black; */
+    margin-top: 300px;
+    height: 150px;
+    width: 500px;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    background-image: url("images/car-animation-ko-laagi.png");
+    background-size: cover;
+    background-position: center;
+
+    animation-name: car-move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.wheel{
+    /* border: 3px solid black; */
+    height: 60px;
+    width: 60px;
+    background-image: url("https://contents.mediadecathlon.com/p1810941/k$1a4c45c68d041667787933e9a4724562/100-mm-freestyle-wheel-with-black-alu-rim-black-pu85a-rubber-decathlon-8555808.jpg?f=1920x0&format=auto");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 50px;
+    animation-name: wheel-rotate;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;  
+}
+
+@keyframes car-move{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(1500px);
+    }
+}
+
+@keyframes wheel-rotate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
