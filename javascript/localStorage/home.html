@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <p id="welcome-message"></p>
+
+    <script>
+      const person = {
+        name: "Alice",
+        age: 25,
+        city: "Los Angeles",
+      };
+
+      localStorage.setItem("username", "John");
+      localStorage.setItem("phone", "9839205");
+      //   localStorage.setItem("person", person); // This will not work as expected because localStorage can only store strings. When you try to store an object directly, it will be converted to the string "[object Object]", which is not useful. To store an object in localStorage, you need to convert it to a JSON string first using JSON.stringify().
+      const personJson = JSON.stringify(person); // This will convert the person object to a JSON string
+      localStorage.setItem("person", personJson); // This will convert the person object to a JSON string before storing it in localStorage
+
+      console.log(localStorage.getItem("username"));
+
+      // localStorage.removeItem('phone'); // localStorage.removeItem('phone') will remove the item with the key 'phone' from localStorage
+      // localStorage.clear(); // localStorage.clear() will remove all the items from localStorage
+
+      console.log(localStorage.getItem("person")); // This will retrieve the JSON string from localStorage, but it will not be in object form. To convert it back to an object, you need to use JSON.parse().
+      const personJobject = JSON.parse(localStorage.getItem("person")); // This will convert the JSON string back to an object
+      console.log(personJobject);
+    </script>
+  </body>
+</html>
