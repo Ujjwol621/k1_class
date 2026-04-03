@@ -4,21 +4,59 @@
 // const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
 
 // Converting JavaScript object to JSON string
-const person = {
-    name: "Alice",
-    age: 25,
-    city: "Los Angeles"
-};
-console.log("JavaScript Object:", person);
-const jsonString = JSON.stringify(person);
-console.log("JSON String:", jsonString);
+// const person = {
+//     name: "Alice",
+//     age: 25,
+//     city: "Los Angeles"
+// };
+// console.log("JavaScript Object:", person);
+// const jsonString = JSON.stringify(person);
+// console.log("JSON String:", jsonString);
 
-// Converting JSON string to JavaScript object
-const parsedObject = JSON.parse(jsonString);
-console.log("Parsed Object:", parsedObject);
+// // Converting JSON string to JavaScript object
+// const parsedObject = JSON.parse(jsonString);
+// console.log("Parsed Object:", parsedObject);
 
 // why use JSON?
 // 1. Data Interchange: JSON is a common format for exchanging data between a server and a client in web applications.
 // 2. Readability: JSON is easy to read and write for humans, making it a popular choice for configuration files and data storage.
 // 3. Language Independence: JSON is language-independent, meaning it can be used with any programming language that supports text parsing.
 // 4. Lightweight: JSON is a lightweight format, which makes it efficient for transmitting data over the network.
+
+
+// assignment // Find 
+// var cat = {
+//   name: 'Fluffyy',
+//   activities: ['play', 'eat cat food'],
+//   catFriends: [
+//     {
+//       name: 'bar',
+//       activities: ['be grumpy', 'eat bread omblet'],
+//       weight: 8,
+//       furcolor: 'white'
+//     },
+//     {
+//       name: 'foo',
+//       activities: ['sleep', 'pre-sleep naps'],
+//       weight: 3
+//     }
+//   ]
+// };
+
+// // List all activities of Fluffyy's catFriends
+// let allActivities = [];
+// for (let friend of cat.catFriends) {
+//   allActivities = allActivities.concat(friend.activities);
+// }
+// console.log("catFriends activities:", allActivities);
+
+// // Total weight of catFriends
+// let totalWeight = 0;
+// for (let friend of cat.catFriends) {
+//   totalWeight += friend.weight;
+// }
+// console.log("Total weight of catFriends:", totalWeight);
+
+// **Output:**
+// catFriends activities: ['be grumpy', 'eat bread omblet', 'sleep', 'pre-sleep naps']
+// Total weight of catFriends: 11
