@@ -73,7 +73,11 @@
 // console.log(fullName.trim()) // trim all the spaces at the front and the end of the whole string
 
 // Write a arrow function that will convert "hello" = "Hello" (no replace)
-// let str = "hello"
+// const convert = (str) => {
+//   console.log(str.split("")[0].toUpperCase() + str.slice(1));
+// };
+// convert("hello");
+
 // const convert = () => {
 //     let splitstr = str.split("")
 //     splitstr[0] = 'H'
@@ -99,4 +103,3 @@
 //     console.log(newStr.trim())
 // }
 // console.log(toTitleCase("hello i am ram")); // "Hello I Am Ram"
-
