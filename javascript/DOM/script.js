@@ -1,4 +1,4 @@
-//DOM - Document Object Model
+//DOM - Doxument Object Model
 // it is a programming interface for HTML and XML documents. 
 // It represents the page so that programs can change the document structure, 
 // style, and content. The DOM represents the document as nodes and objects; 
@@ -62,12 +62,12 @@
 // tags.innerHTML = "<h1>updated</h1>" // it will change the HTML content of the element with the id "1" to "<h1>This is HTML and CSS class</h1>"
 // console.log(tags.innerHTML)
 
-let empty = document.querySelector(".empty")
-console.log(empty.textContent)
-let h1 = document.createElement("h1") // it will create a new h1 element
-h1.textContent = "This is a new h1 element" // it will set the text content of the h1 element to "This is a new h1 element"
-empty.appendChild(h1) // it will append the h1 element as a child of the empty div
-console.log(empty.textContent)
+// let empty = document.querySelector(".empty")
+// console.log(empty.textContent)
+// let h1 = document.createElement("h1") // it will create a new h1 element
+// h1.textContent = "This is a new h1 element" // it will set the text content of the h1 element to "This is a new h1 element"
+// empty.appendChild(h1) // it will append the h1 element as a child of the empty div
+// console.log(empty.textContent)
 
 // empty.style.border = "1px solid red" // it will add a red border to the empty div
 // empty.style.padding = "10px" // it will add a padding of 10px to the empty div
@@ -79,7 +79,37 @@ console.log(empty.textContent)
 // empty.style.margin = "0 auto" // it will center the empty div horizontally
 
 
-empty.classList.add("Js-class")
-// empty.classList.remove("Js-class")
-console.log(empty.classList)
+// empty.classList.add("Js-class")
+// // empty.classList.remove("Js-class")
+// console.log(empty.classList)
 
+// Event handling in JavaScript
+// Event Handler is a function that is called when an event occurs.
+// function myfunction(){
+//     console.log("This is a button")
+// }
+
+// using event listener
+const btn = document.querySelector("#myButton")
+btn.addEventListener("click", () => {
+    console.log("This is a eventListener")
+})
+
+// btn.addEventListener("click", ()=>{
+//     console.log("This is second eventListener")
+// })
+
+btn.addEventListener("mouseover", () => {
+    console.log("This is a Mouseover eventListener")
+})
+
+btn.addEventListener("mouseout", () => {
+    console.log("This is a Mouseout eventListener")
+})
+
+btn.addEventListener("dblclick", () => {
+    console.log("This is a Double Click eventListener")
+})
+
+btn.removeEventListener("mouseover", () => {
+})
