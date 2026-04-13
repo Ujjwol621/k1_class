@@ -56,14 +56,33 @@
 // }
 // getProducts();
 
-let getUsers = async () => {
-  try {
-    let res = await fetch("https://dummyjson.com/users");
-    res = await res.json();
-    console.log(res.users[0].id);
-    console.log(res.users[0].firstName);
-  } catch (error) {
-    console.log(error);
-  }
-};
-getUsers();
+// let getUsers = async () => {
+//   try {
+//     let res = await fetch("https://dummyjson.com/users");
+//     res = await res.json();
+//     console.log(res.users[0].id);
+//     console.log(res.users[0].firstName);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+// getUsers();
+
+// Object and Array Destructuring
+
+// Object destructuring allows you to extract values from an object and assign them to variables in a more concise way.
+const User = {
+  name : 'Ram',
+  age : 20
+}
+
+const {name, age} = User
+console.log(name) // You can access the values with just the variables instead of doing User.name
+console.log(age)
+
+// Array destructuring allows you to extract values from an array and assign them to variables in a similar way.
+const arr = [1, 2, 3, 4, 5]
+const [a, b, c] = arr
+console.log(a) // You can access the values with just the variables instead of doing arr[0]
+console.log(b)
+console.log(c)
