@@ -3,6 +3,7 @@ import App from "./App.jsx";
 import Counter from "./Counter.jsx";
 import InputData from "./InputData.jsx";
 import CounterProject from "./CounterProject.jsx";
+import FormHandling from "./FormHandling.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -10,6 +11,8 @@ createRoot(document.getElementById("root")).render(
     {/* <App /> */}
     {/* <Counter /> */}
     {/* <InputData /> */}
-    <CounterProject/>
-  </div>,
+    {/* <CounterProject/> */}
+    <FormHandling/>
+
+  </div>
 );

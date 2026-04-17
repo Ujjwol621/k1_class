@@ -1,22 +1,61 @@
-import { useState } from "react"
+import { useState } from "react";
+import "./CounterProject.css";
 function CounterProject() {
-    const[initial, setInitial] = useState()
-    const[val, setVal] = useState(10);
+  const [initial, setInitial] = useState("");
+  const [val, setVal] = useState(10);
 
   return (
-    <div>
+    <div class="container">
+      <h1 class="title">React Counter</h1>
+      <div class="card">
         <h2>Value : {val}</h2>
-        <button onClick={()=>{setVal(val+5)}}>Add 5</button>
-        <button onClick={()=>{setVal(val-5)}}>Subtract 5</button>
-        <label>Enter the value to add : </label>
-        <input onChange = {(e)=>{
+        <button
+          class="reset-btn"
+          onClick={() => {
+            setVal(0);
+          }}
+        >
+          Reset
+        </button>
+        <div class="btn-container">
+          <button
+            class="btn"
+            onClick={() => {
+              setVal(val + 5);
+            }}
+          >
+            Add 5
+          </button>
+          <button
+            class="btn"
+            onClick={() => {
+              setVal(val - 5);
+            }}
+          >
+            Subtract 5
+          </button>
+        </div>
+        <input
+          class="input"
+          value={initial}
+          onChange={(e) => {
             setInitial(Number(e.target.value));
-        }} type = "text" placeholder='Enter Number....'></input> 
-        <button onClick = {()=>{
+          }}
+          type="text"
+          placeholder="Enter Number to add"
+        ></input>
+        <button
+          class="btn"
+          onClick={() => {
             setVal(initial + val);
-        }}>Set</button>
+            setInitial("");
+          }}
+        >
+          Set
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default CounterProject
+export default CounterProject;
