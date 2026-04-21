@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #efefef;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 8px auto;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    background: #f9f9f9;
+    padding: 14px 14px 16px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+.container h1 {
+    margin: 0 0 14px;
+    text-align: center;
+    color: #4b8c59;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container form div {
+    width: 100%;
+}
+
+.container label {
+    color: #2c2c2c;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="url"],
+.container select,
+.container textarea {
+    width: 100%;
+    margin-top: 4px;
+    border: 1px solid #c9c9c9;
+    background: #ffffff;
+    color: #333;
+    font-size: 10px;
+    padding: 5px 6px;
+    border-radius: 0;
+}
+
+.container textarea {
+    min-height: 82px;
+    resize: none;
+}
+
+.gender input,
+.best-subjects input {
+    margin-left: 9px;
+    margin-right: 4px;
+    transform: scale(0.85);
+    vertical-align: middle;
+}
+
+.gender label,
+.best-subjects label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.upload-resume input[type="file"] {
+    margin-top: 4px;
+    font-size: 9px;
+}
+
+.submit-btn {
+    margin-top: 6px;
+}
+
+.submit-btn button {
+    width: 43%;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 0;
+    margin-top: 8px;
+    color: #f4fff6;
+    background: #55b65d;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn button + button {
+    margin-left: 14%;
+}
