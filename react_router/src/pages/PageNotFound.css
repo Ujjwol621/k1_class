@@ -1,0 +1,23 @@
+.pageNotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: black;
+    color : white;
+}
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 10px;
+}
+.home-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border : 1px solid rgb(255, 0, 0);
+    padding : 15px;
+}
