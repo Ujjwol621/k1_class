@@ -8,8 +8,8 @@
     display : flex;
     justify-content: space-around;
 }
-a{
-    color: white;
+.nav-bar a{
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

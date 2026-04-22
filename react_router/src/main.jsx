@@ -9,3 +9,10 @@ createRoot(document.getElementById("root")).render(
     </BrowserRouter>
   </>,
 );
+
+// simple routing
+// nested routing
+// protected routing
+// dynamic routing
+
+// dynamic routing

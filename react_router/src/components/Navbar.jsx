@@ -8,6 +8,8 @@ function Navbar() {
       <NavLink to='/about'>About</NavLink>
       <NavLink to='/products'>Products</NavLink>
       <NavLink to='/contact'>Contact</NavLink>
+      <NavLink to='/admin'>Admin</NavLink>
+      <NavLink to='/login'>Login</NavLink>
     </header>
   )
 }
